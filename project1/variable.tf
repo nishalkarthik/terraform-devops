@@ -79,6 +79,8 @@ variable "AZ-public" {
 variable "AZ-private" {
   type = string
   description = "this is availability zones for private subnet"
+
+
 }
 
 

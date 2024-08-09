@@ -86,7 +86,7 @@ resource "aws_lambda_function" "lambdafunction-fileconversion" {
   runtime = "python3.9"
   layers = [aws_lambda_layer_version.file-conversion-pypi-lib.arn]
   timeout = 30
-}
+ }
 ##3-cloudwatch-loggroups
 resource "aws_cloudwatch_log_group" "terralambda-fc" {
   name = "/aws/lambda/${aws_lambda_function.lambdafunction-fileconversion.function_name}"
